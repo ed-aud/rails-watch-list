@@ -1,0 +1,34 @@
+.page-body {
+  margin: 25px;
+}
+.list-heading {
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
+}
+.movie-container {
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-overview {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  img {
+    height: 250px;
+  }
+  .movie-details {
+    margin: auto 20px;
+    height: 250px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .delete-div {
+    display: flex;
+    justify-content: space-between;
+  }
+}

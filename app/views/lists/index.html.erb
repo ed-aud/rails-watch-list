@@ -1,5 +1,24 @@
-<h1>Lists</h1>
+<div class="page-body">
+  <div class="hero-container">
+    <%# <img class="hero_image" src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1wdHklMjB0aGVhdGVyfGVufDB8fDB8fHww" alt="" style="width: 100%"> %>
+    <h1 class="centered">Welcome to Film Library</h1>
+  </div>
 
-<% @lists.each do |list| %>
-  <p><%= list %></p>
-<% end %>
+  <div class="home-container">
+    <h2>My Films</h2>
+
+    <div class="list-cards-container">
+      <% @lists.each do |list| %>
+        <div class="list-card">
+          <img src="" alt="">
+          <h3><%= link_to list.name, list_path(list), class: "film-link" %></h3>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="button">
+      <%= link_to "Create a new list", new_list_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+
+</div>
