@@ -1,6 +1,11 @@
-<div class="page-body">
+<div class="hero_list_container" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.image.key, height: 300, crop: :fill %>')">
+  <h1><%= @list.name %></h1>
+</div>
+
+<%# <div class="page-body"> %>
+<div class="show-list-container">
   <div class="list-heading">
-    <h1><%= @list.name %></h1>
+    <h2>My <%= @list.name %> List</h2>
     <div class="button">
       <%= link_to "Add new film", new_list_bookmark_path(@list), class: "btn btn-primary" %>
     </div>
